@@ -85,6 +85,10 @@ What the model shows:
 - Captures (2^20 bits plus the decimated samples) go to the PC with a checksum. The PC checks the on-chip CIC against the Python CIC sample for sample, then computes SNDR/ENOB/SFDR next to the ideal model at the same measured amplitude.
 - Build, wiring and measurement guide: **[docs/wiring.md](docs/wiring.md)**.
 
+![Bench setup](docs/img/bench_setup.jpg)
+
+*The bench setup used for the measurements: the STM32F746G-DISCO in the centre, the ΣΔ loop filter (MCP6002, integrator, 1.65 V reference, PWM filter) on the left breadboard. The other modules are sensor wiring for the planned extras; they stayed connected but idle during the captures.*
+
 ### Measured results (breadboard, 2026-11-25)
 
 Every number below comes from real captures (raw data in [data/](data/), analysis in
